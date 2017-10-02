@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+      <head>
+       <!-- <title>#{get 'title' /}</title> -->
+        <title>VIVAR - VILLANUEVA ENTERPRISES </title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/vvelogo.png'}">
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    </head>
+<style>
+
+        ul.breadcrumb {
+        padding: 8px 16px;
+        list-style: none;
+        background-color: #eee;
+        }
+        ul.breadcrumb li {display: inline;}
+        ul.breadcrumb {position:absolute; left:500px;top:90px;}
+        ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+        }
+        ul.breadcrumb li a {color: green;}
+</style>
+<style>
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 109px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<body>
+        <div class="container">
+            <div class="title">
+                <marquee behavior="scroll" direction="left"><p> VIVAR-VILLANUEVA ENTERPRISES | PRINTING SERVICES AND CORPORATE GIVEAWAYS...... </p></marquee>
+               </div>
+            </div>
+         <div class="container">
+            <nav class="navbar navbar-inverse">
+                       <div class="container-fluid">
+                           <div>
+                               <ul class="nav navbar-nav">
+                                   <li class="active"><a href="@{Application.index()}">Home</a></li>
+                                   <li><a href="@{Application.aboutus()}">Company Profile</a></li>
+                                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                           <li><a href="@{Application.ts()}">Customize T-Shirt Printing / Corporate Giveaways</a></li>
+                                           <li><a href="@{Application.f_fragrance()}">Fragrance</a></li>
+                                           <li><a href="@{Application.cloth()}">Clothing Product</a></li>
+                                           <li class="divider"></li>
+                                           <li class="dropdown">
+                                               <a href="javascript:void(0)" class="dropbtn">Beauty Product</a>
+                                               <div class="dropdown-content">
+                                                   <a href="@{Application.nuskin()}"><span style="color:orange">NuSkin Product</span></a>
+                                                   <a href="@{Application.HN()}"><span style="color:orange">Human Heart Nature</span></a>
+                                               </div>
+                                           </li>
+                                       </ul>
+                                   </li>
+
+                               </ul>
+                           </div>
+                       </div>
+            </nav>
+         </div>
+        <br>
+        <ul class="breadcrumb">
+            <li class="active"><a href="@{Application.customts()}">Custom TShirt Printing</a></li>
+            <li><a href="@{Application.f_fragrance()}">Fragrance</a></li>
+        </ul><br>
+        <div class="container">
+            <h2>Mugs Printing Services </h2>
+            <div class="img">
+                <a  href="/public/images/vve/Mug/mug1.jpg">
+                    <img src="/public/images/vve/Mug/mug1.jpg" alt="Fjords" width="300" height="200">
+                </a>
+                <div class="desc">Mugs for 6th Years Anniversary of Solid Sun Builders</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Mug/mug2.jpg">
+                    <img src="/public/images/vve/Mug/mug2.jpg" alt="mug2" width="300" height="200">
+                </a>
+                <div class="desc">Mugs for 6th Years Anniversary of Solid Sun Builders</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Mug/mug3.jpg">
+                    <img src="/public/images/vve/Mug/mug3.jpg" alt="mug3" width="300" height="200">
+                </a>
+                <div class="desc">Mugs for Christmas Giveaways of JDLP</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Bags Printing Services </h2>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag1.jpg">
+                    <img src="/public/images/vve/Bag Print/bag1.jpg" alt="bag1" width="300" height="200">
+                </a>
+                <div class="desc">Bags for Birthday Giveaways</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag5.jpg">
+                    <img src="/public/images/vve/Bag Print/bag5.jpg" alt="bag5" width="300" height="200">
+                </a>
+                <div class="desc">Bags for The Fragrance Project</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag6.jpg">
+                    <img src="/public/images/vve/Bag Print/bag6.jpg" alt="bag6" width="300" height="200">
+                </a>
+                <div class="desc">Bags for The Fragrance Project</div>
+            </div>
+
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag3.jpg">
+                    <img src="/public/images/vve/Bag Print/bag3.jpg" alt="bag3" width="300" height="200">
+                </a>
+                <div class="desc">Bag Order Ship to Guam</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag4.jpg">
+                    <img src="/public/images/vve/Bag Print/bag4.jpg" alt="bag4" width="300" height="200">
+                </a>
+                <div class="desc">Bag Order Ship to Guam</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Bags Printing Services  Order Ship to Guam</h2>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag2.jpg">
+                    <img src="/public/images/vve/Bag Print/bag2.jpg" alt="bag2" width="300" height="200">
+                </a>
+                <div class="desc">Bag Order Ship to Guam</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag7.jpg">
+                    <img src="/public/images/vve/Bag Print/bag7.jpg" alt="bag7" width="300" height="200">
+                </a>
+                <div class="desc">Bag Order Ship to Guam</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag8.jpg">
+                    <img src="/public/images/vve/Bag Print/bag8.jpg" alt="bag8" width="300" height="200">
+                </a>
+                <div class="desc">Bag Order Ship to Guam</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/bag9.jpg">
+                    <img src="/public/images/vve/Bag Print/bag9.jpg" alt="bag9" width="300" height="200">
+                </a>
+                <div class="desc">Bag Order Ship to Guam</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Umbrela Printing Services </h2>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/umb2.jpg">
+                    <img src="/public/images/vve/Bag Print/umb2.jpg" alt="umbr2" width="300" height="200">
+                </a>
+                <div class="desc">Corporate Giveaways from Kyocera</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Bag Print/umb3.jpg" >
+                    <img src="/public/images/vve/Bag Print/umb3.jpg" alt="umbr3" width="300" height="200">
+                </a>
+                <div class="desc">Corporate Giveaways from Kyocera</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/Button Pin/button1.jpg">
+                    <img src="/public/images/vve/Button Pin/button1.jpg" alt="button1" width="300" height="200">
+                </a>
+                <div class="desc">Birthday Giveaways</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h2>T-Shirt Printing Services - Vinyl Printing using Heat Press</h2>
+            <div class="img">
+                <a href="/public/images/vve/jersey/jer3.jpg">
+                    <img src="/public/images/vve/jersey/jer3.jpg" alt="jer3" width="300" height="200">
+                </a>
+                <div class="desc">Brgy Punta League</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/jersey/jer4.jpg">
+                    <img src="/public/images/vve/jersey/jer4.jpg" alt="jer4" width="300" height="200">
+                </a>
+                <div class="desc">Brgy Punta League</div>
+            </div>
+            <div class="img">
+                <a href="/public/images/vve/jersey/jer5.jpg">
+                    <img src="/public/images/vve/jersey/jer5.jpg" alt="jer5" width="300" height="200">
+                </a>
+                <div class="desc">Brgy Punta League</div>
+            </div>
+        </div>
+        <br>
+            <div class="container">
+                <h2>T-Shirt Printing Services - Silkscreen</h2>
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer1.jpg">
+                        <img src="/public/images/vve/jersey/jer1.jpg" alt="jer1" width="300" height="200">
+                    </a>
+                    <div class="desc">Morning Star Montessori School Los Banos</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer2.jpg">
+                        <img src="/public/images/vve/jersey/jer2.jpg" alt="jer2" width="300" height="200">
+                    </a>
+                    <div class="desc">Morning Star Montessori School Los Banos</div>
+                </div>
+            </div>
+        <br>
+            <div class="container">
+                <h2>T-Shirt Printing Services - Silkscreen</h2>
+                <div class="img">
+                    <a href="/public/images/vve/Tshirt/ts1.jpg">
+                        <img src="/public/images/vve/Tshirt/ts1.jpg" alt="ts1" width="300" height="200">
+                    </a>
+                    <div class="desc">Personalized Ship to Canada</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Tshirt/ts3.jpg">
+                        <img src="/public/images/vve/Tshirt/ts3.jpg" alt="ts3" width="300" height="200">
+                    </a>
+                    <div class="desc">Donation for Les Fortunate People - Caraban December 2016</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Tshirt/ts2.jpg" >
+                        <img src="/public/images/vve/Tshirt/ts2.jpg" alt="ts2" width="300" height="200">
+                    </a>
+                    <div class="desc">Birthday Personalized - Mar 2017</div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <h2>Corporate Printing Services - Vinyl Ink - Silkscreen</h2>
+                <div class="img">
+                    <a href="/public/images/vve/Planner/plan1.jpg">
+                        <img src="/public/images/vve/Planner/plan1.jpg" alt="plan1" width="300" height="200">
+                    </a>
+                    <div class="desc">Solid Sun Builders 2017</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/planner/plan2.jpg">
+                        <img src="/public/images/vve/planner/plan2.jpg" alt="plan2" width="300" height="200">
+                    </a>
+                    <div class="desc">Solid Sun Builders 2017</div>
+                </div>
+            </div>
+
+
+
+<footer>
+<div class="container">
+  <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+              <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="@{Application.aboutus()}">About Us</a></li>
+                    <li><a href="@{Application.contactus()}">Contact Us</a></li>
+                </ul>
+                </div>
+         </div>
+    </nav>          
+
+</div>    
+</footer>
+
+</body> 
+</html>

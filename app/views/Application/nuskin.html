@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <title>#{get 'title' /}</title> -->
+    <title>VIVAR - VILLANUEVA ENTERPRISES </title>
+    <meta charset="${_response_encoding}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+    #{get 'moreStyles' /}
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/vvelogo.png'}">
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    #{get 'moreScripts' /}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 109px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+<body>
+<div class="container">
+    <img src="/public/images/282315_576468935708276_792983027_n.jpg" alt="" width="1130" height="180" align="center">
+    <div class="title">
+        <marquee behavior="scroll" direction="left"><p> VIVAR-VILLANUEVA ENTERPRISES | PRINTING SERVICES AND CORPORATE GIVEAWAYS...... </p></marquee>
+    </div>
+</div>
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="@{Application.index()}">Home</a></li>
+                    <li><a href="@{Application.aboutus()}">Company Profile</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@{Application.ts()}">Customize T-Shirt Printing / Corporate Giveaways</a></li>
+                            <li><a href="@{Application.f_fragrance()}">Fragrance</a></li>
+                            <li><a href="@{Application.cloth()}">Clothing Product</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Beauty Product</a>
+                                <div class="dropdown-content">
+                                    <a href="@{Application.nuskin()}"><span style="color:orange">NuSkin Product</span></a>
+                                    <a href="@{Application.HN()}"><span style="color:orange">Human Heart Nature</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div style="margin-left:100px;margin-top:-10px;">
+        <h4 style="text-align:center">NUSKIN BESTSELLER TRIO<br><br><img src="/public/images/nuskin/powertrio.jpg" alt="" width="450" height="280"></h4></div>
+    <h3 style="text-align:center">The NuSkin Power Trio! I use these everyday. 😍 </h3>
+    <h2 style="text-align:center;color:red">&{'BS1'}</h2>
+    <h3 style="text-align:center">&{'BS2'}</h3>
+    <h3 style="text-align:center">&{'BS3'}</h3>
+    <h3 style="text-align:center">&{'BS4'}</h3>
+    <h3 style="text-align:center">&{'BS5'}</h3>
+
+    <br><hr>
+
+    <h2>SCION FEMININE WASH(250mL) <img src="/public/images/nuskin/fwscion.jpg" alt="" width="250" height="380" align="right"> </h2>
+    <p>&{'FW'}</p>
+    <p>&{'FW1'}</p>
+    <p>&{'FWp1'}</p>
+    <p>&{'FWp12'}</p>
+    <p>&{'FWp13'}</p>
+    <p>&{'FWp14'}</p>
+    <p>&{'FWp15'}</p>
+    <p>&{'FWp16'}</p>
+    <p>&{'FWp17'}</p>
+    <p>&{'FWp18'}</p>
+    <br><hr>
+
+    <h2>SCION DEODORANT <img src="/public/images/nuskin/deoscion.jpg" alt="" width="250" height="380" align="LEFT"> </h2>
+    <p>&{'FW'}</p>
+    <p>&{'FW1'}</p>
+    <p>&{'FWp1'}</p>
+    <p>&{'FWp12'}</p>
+    <p>&{'FWp13'}</p>
+    <p>&{'FWp14'}</p>
+    <p>&{'FWp15'}</p>
+    <p>&{'FWp16'}</p>
+    <p>&{'FWp17'}</p>
+    <p>&{'FWp18'}</p>
+    <br><hr>
+
+    <h2>AP24 WHITENING TOOTHPASTE <img src="/public/images/nuskin/ap24.jpg" alt="" width="250" height="380" align="RIGHT"> </h2>
+    <p>&{'AP24'}</p>
+    <p>&{'AP241'}</p>
+    <p>&{'AP242'}</p>
+    <p>&{'AP243'}</p>
+</div>
+<br><hr>
+
+<p style="text-align:center;color:red">You can join this online business by clicking the sign-up for free: Sign up here. <a href="https://www.nuskin.com/en_PH/signup/distributor_signup.html">https://www.nuskin.com/en_PH/signup/distributor_signup.html</a> </p><br>
+<p style="text-align:center;color:blue;font-style:bold">Just put the under your Personal Distributor Account: <b><u>PH0048500</u></b> </p>
+<br><hr>
+
+<footer>
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="@{Application.aboutus()}">About Us</a></li>
+                        <li><a href="@{Application.contactus()}">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</footer>
+
+</body>
+</html>
