@@ -1,0 +1,801 @@
+/* line 251, ../sass/_common.scss */
+.clear {
+  clear: both;
+}
+
+/* line 254, ../sass/_common.scss */
+.page {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Helvetica", "Arial";
+}
+/* line 38, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 259, ../sass/_common.scss */
+.hyperlink-underline {
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 3px;
+}
+
+/* line 10, ../sass/backstage.scss */
+body {
+  background: #ffffff !important;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, ../sass/backstage.scss */
+.glyphicon {
+  font-family: 'Glyphicons Halflings' !important;
+}
+
+/* line 18, ../sass/backstage.scss */
+.form-control {
+  display: block;
+  line-height: 1.42857143;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* line 26, ../sass/backstage.scss */
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+/* line 31, ../sass/backstage.scss */
+.stick {
+  position: fixed;
+  top: 30px;
+  z-index: 10;
+}
+
+/* line 36, ../sass/backstage.scss */
+.btn-primary, .btn-info, .btn-success, .btn-warning, .btn-danger {
+  background-color: #d7006d !important;
+}
+
+/* line 39, ../sass/backstage.scss */
+.company {
+  font-family: "Helvetica", "Arial";
+  font-weight: 100;
+}
+/* line 40, ../sass/backstage.scss */
+.company a {
+  color: #b3b3b3;
+}
+/* line 42, ../sass/backstage.scss */
+.company a:hover {
+  color: #666;
+}
+
+/* line 49, ../sass/backstage.scss */
+input:focus {
+  border-color: #F16488 !important;
+}
+
+/* line 52, ../sass/backstage.scss */
+select {
+  border-radius: 0px !important;
+}
+
+/* line 55, ../sass/backstage.scss */
+.page {
+  margin: 50px auto;
+  font-weight: 200;
+}
+
+/* line 59, ../sass/backstage.scss */
+.highline {
+  color: orange;
+  font-weight: 400;
+}
+
+/* line 63, ../sass/backstage.scss */
+.main_item {
+  text-align: right;
+  padding: 0 10px;
+  height: 100%;
+  width: 15.49296%;
+  float: left;
+  margin-right: 1.40845%;
+  display: inline;
+}
+/* line 68, ../sass/backstage.scss */
+.main_item .index_backstage {
+  min-width: 600px;
+}
+/* line 71, ../sass/backstage.scss */
+.main_item .index_backstage li {
+  float: left;
+  padding-left: 20px;
+}
+/* line 76, ../sass/backstage.scss */
+.main_item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* line 80, ../sass/backstage.scss */
+.main_item .btn-pink {
+  background-color: #d7006d !important;
+  border: none;
+  margin-right: -8px;
+  margin-bottom: 10px;
+  color: #fff;
+  line-height: 1.5;
+  border-radius: 0px !important;
+  padding: 9px 13px;
+}
+
+/* line 92, ../sass/backstage.scss */
+h3 {
+  color: #666;
+  font-size: 34px;
+  padding: 20px 0;
+}
+
+/* line 97, ../sass/backstage.scss */
+h6 {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+/* line 102, ../sass/backstage.scss */
+h6 a, h6 .highline {
+  color: #666;
+  font-size: 21px;
+}
+
+/* line 107, ../sass/backstage.scss */
+.block {
+  margin-bottom: 10px;
+}
+
+/* line 110, ../sass/backstage.scss */
+.content_add {
+  width: 100%;
+  float: left;
+  margin-right: 1.40845%;
+  display: inline;
+}
+/* line 113, ../sass/backstage.scss */
+.content_add .uploadfile .videoThumbnail {
+  position: absolute;
+  margin-top: 250px;
+}
+/* line 117, ../sass/backstage.scss */
+.content_add .uploadfile .upload-blob {
+  position: absolute;
+  margin-top: 310px;
+}
+/* line 122, ../sass/backstage.scss */
+.content_add .uploadfile .drag-drop {
+  position: relative;
+}
+/* line 124, ../sass/backstage.scss */
+.content_add .uploadfile .drag-drop .ajax-upload-dragdrop {
+  border: 1px dashed #b3b3b3;
+  padding: 20px;
+  margin: 20px 0;
+}
+/* line 130, ../sass/backstage.scss */
+.content_add .uploadfile .drag-drop .ajax-file-upload-statusbar div {
+  display: inline-block;
+  padding: 15px 20px;
+}
+/* line 134, ../sass/backstage.scss */
+.content_add .uploadfile .drag-drop .ajax-file-upload-statusbar .ajax-file-upload-red {
+  cursor: point;
+  background: red;
+}
+/* line 138, ../sass/backstage.scss */
+.content_add .uploadfile .drag-drop .ajax-file-upload-statusbar .ajax-file-upload-green {
+  cursor: point;
+  background: #d7006d;
+  color: #fff;
+  margin-left: 11%;
+  margin-top: 9%;
+  position: absolute;
+}
+/* line 148, ../sass/backstage.scss */
+.content_add .uploadfile .drag-drop i {
+  font-size: 48px;
+}
+/* line 153, ../sass/backstage.scss */
+.content_add .uploadfile .list img, .content_add .uploadfile .list span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+/* line 158, ../sass/backstage.scss */
+.content_add .uploadfile .list img {
+  width: 30%;
+}
+/* line 161, ../sass/backstage.scss */
+.content_add .uploadfile .list span {
+  width: 65%;
+}
+/* line 163, ../sass/backstage.scss */
+.content_add .uploadfile .list span div {
+  font-size: 21px;
+  line-height: 2;
+}
+/* line 169, ../sass/backstage.scss */
+.content_add .uploadfile .list-2 {
+  position: absolute;
+}
+/* line 171, ../sass/backstage.scss */
+.content_add .uploadfile .list-2 img, .content_add .uploadfile .list-2 span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+/* line 176, ../sass/backstage.scss */
+.content_add .uploadfile .list-2 img {
+  width: 50%;
+}
+/* line 179, ../sass/backstage.scss */
+.content_add .uploadfile .list-2 span {
+  width: 65%;
+}
+/* line 181, ../sass/backstage.scss */
+.content_add .uploadfile .list-2 span div {
+  font-size: 21px;
+  line-height: 2;
+}
+
+/* line 189, ../sass/backstage.scss */
+.content {
+  width: 83.09859%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -10px;
+  display: inline;
+}
+/* line 192, ../sass/backstage.scss */
+.content .select_Cat .add {
+  float: right;
+  margin-top: -10px;
+}
+/* line 198, ../sass/backstage.scss */
+.content .proddetails {
+  background-color: rgba(214, 100, 136, 0.2);
+  border-top: 3px solid rgba(215, 0, 109, 0.2);
+  font-size: 16px;
+  color: #000;
+  position: relative;
+}
+/* line 204, ../sass/backstage.scss */
+.content .proddetails li {
+  padding: 15px 0;
+  line-height: 1.5;
+  border-bottom: 2px solid rgba(215, 0, 109, 0.2);
+  color: #666;
+}
+/* line 210, ../sass/backstage.scss */
+.content .proddetails li:last-child {
+  border-bottom: none;
+}
+/* line 213, ../sass/backstage.scss */
+.content .proddetails li .thead {
+  color: #fff !important;
+}
+/* line 217, ../sass/backstage.scss */
+.content .proddetails li span {
+  text-align: center;
+  width: 15.49296%;
+  float: left;
+  margin-right: 1.40845%;
+  display: inline;
+}
+/* line 222, ../sass/backstage.scss */
+.content .proddetails li span:nth-child(3) {
+  width: 40.84507%;
+  float: left;
+  margin-right: 1.40845%;
+  display: inline;
+  text-align: left;
+}
+/* line 228, ../sass/backstage.scss */
+.content .proddetails li:hover:not(.thead) {
+  color: #d7006d;
+  background: rgba(179, 179, 179, 0.3);
+  transition: .3s;
+  cursor: pointer;
+}
+/* line 236, ../sass/backstage.scss */
+.content .proddetails #media, .content .proddetails #support {
+  background: RGBA(214, 100, 136, 0.2);
+  color: #fff;
+}
+/* line 240, ../sass/backstage.scss */
+.content .proddetails .remove {
+  position: absolute;
+  right: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 244, ../sass/backstage.scss */
+.content .proddetails .remove i {
+  padding: 0px;
+}
+/* line 251, ../sass/backstage.scss */
+.content p, .content .block {
+  font-size: 16px;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+/* line 258, ../sass/backstage.scss */
+.content .btn-success {
+  padding: 30px 60px;
+}
+
+/* line 262, ../sass/backstage.scss */
+.empty-space {
+  height: 230px;
+}
+
+/* line 265, ../sass/backstage.scss */
+#showlist {
+  height: 150px;
+}
+
+/* line 269, ../sass/backstage.scss */
+.support-backstage-bottom {
+  margin-bottom: 36%;
+}
+
+/* line 273, ../sass/backstage.scss */
+.serialNumber {
+  position: relative;
+}
+/* line 275, ../sass/backstage.scss */
+.serialNumber .action {
+  float: left;
+  width: 960px;
+}
+/* line 279, ../sass/backstage.scss */
+.serialNumber .nav-tabs {
+  border-bottom: none;
+}
+/* line 282, ../sass/backstage.scss */
+.serialNumber .nav-tabs li a {
+  border-radius: 5px;
+  width: 145px;
+  height: 35px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: #d7006d !important;
+  padding: 10px 0px 30px;
+  border: none;
+}
+/* line 293, ../sass/backstage.scss */
+.serialNumber .nav-tabs li a:hover {
+  background-color: #d7006d;
+  color: #666 !important;
+}
+/* line 299, ../sass/backstage.scss */
+.serialNumber .nav-tabs > li.active > a, .serialNumber .nav-tabs > li.active > a:hover, .serialNumber .nav-tabs > li.active > a:focus {
+  background-color: #d7006d;
+  color: #666 !important;
+  border: none;
+}
+/* line 304, ../sass/backstage.scss */
+.serialNumber #himirror {
+  margin-top: 40px;
+}
+/* line 306, ../sass/backstage.scss */
+.serialNumber #himirror h4 {
+  font-family: Arial;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+/* line 311, ../sass/backstage.scss */
+.serialNumber #himirror #serialNumberHiMirror {
+  width: 332px;
+  height: 40px;
+  font-size: 14px;
+  background-color: #faffbd;
+  color: #000;
+  border-radius: 4px;
+}
+/* line 319, ../sass/backstage.scss */
+.serialNumber #himirror #serialNumberHiMirror {
+  margin-top: 6px;
+  margin-bottom: 24px;
+  float: left;
+  height: 48px;
+  width: 350px !important;
+  padding: 10px !important;
+  outline: none;
+}
+/* line 327, ../sass/backstage.scss */
+.serialNumber #himirror #serialNumberHiMirror .glyphicon-plus-sign {
+  font-size: 30px;
+  width: 40px;
+  float: left;
+  margin: 7px 0 0 15px;
+}
+/* line 333, ../sass/backstage.scss */
+.serialNumber #himirror #serialNumberHiMirror p {
+  line-height: 48px;
+  font-size: 14px;
+}
+/* line 339, ../sass/backstage.scss */
+.serialNumber #himirror #addSNPrinter {
+  margin-top: 70px;
+  margin-bottom: 4px;
+  margin-left: -349px;
+  float: left;
+  height: 48px;
+  width: 130px !important;
+  padding: 0 !important;
+  outline: none;
+}
+/* line 348, ../sass/backstage.scss */
+.serialNumber #himirror #addSNPrinter .glyphicon-plus-sign {
+  font-size: 30px;
+  width: 40px;
+  float: left;
+  margin: 7px 0 0 15px;
+}
+/* line 355, ../sass/backstage.scss */
+.serialNumber #himirror #addSNPrinter p {
+  line-height: 48px;
+  font-size: 14px;
+}
+/* line 361, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter {
+  margin-top: 70px;
+  margin-left: -211px;
+  margin-bottom: 24px;
+  float: left;
+  height: 48px;
+  width: 130px !important;
+  padding: 0 !important;
+  outline: none;
+}
+/* line 370, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter .glyphicon-minus-sign {
+  font-size: 30px;
+  width: 40px;
+  float: left;
+  margin: 7px 0 0 15px;
+}
+/* line 376, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter p {
+  line-height: 48px;
+  font-size: 14px;
+}
+/* line 381, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter #clearSNHiMirror {
+  margin-top: 16px;
+  margin-left: 4px;
+  margin-bottom: 24px;
+  float: left;
+  height: 48px;
+  width: 130px !important;
+  padding: 0 !important;
+  outline: none;
+}
+/* line 390, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter #clearSNHiMirror .glyphicon-minus-sign {
+  font-size: 30px;
+  width: 40px;
+  float: left;
+  margin: 7px 0 0 15px;
+  background: url("/support/public/hm_images/if_meanicons_22_197212.png") no-repeat 40% 40%;
+  background-size: 60%;
+}
+/* line 398, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter #clearSNHiMirror p {
+  line-height: 48px;
+  font-size: 14px;
+}
+/* line 403, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter .btn.disabled, .serialNumber #himirror #clearSNPrinter .btn[disabled], .serialNumber #himirror #clearSNPrinter fieldset[disabled] .btn {
+  pointer-events: all !important;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 411, ../sass/backstage.scss */
+.serialNumber #himirror #clearSNPrinter .btn-info {
+  color: #666;
+  background-color: #d7006d;
+  border-color: #d7006d;
+}
+/* line 417, ../sass/backstage.scss */
+.serialNumber #himirror #checkSNHiMirror {
+  margin-top: 11px;
+  height: 50px;
+  width: 175px;
+  padding: 0 !important;
+  outline: none;
+  visibility: hidden;
+}
+/* line 424, ../sass/backstage.scss */
+.serialNumber #himirror #checkSNHiMirror .glyphicon-ok-sign {
+  font-size: 30px;
+  width: 40px;
+  float: left;
+  margin: 7px 0 0 15px;
+}
+/* line 430, ../sass/backstage.scss */
+.serialNumber #himirror #checkSNHiMirror p {
+  line-height: 38px;
+  font-size: 14px;
+}
+/* line 435, ../sass/backstage.scss */
+.serialNumber #himirror table {
+  visibility: hidden;
+}
+/* line 437, ../sass/backstage.scss */
+.serialNumber #himirror table thead tr {
+  border-top: 1px solid #dddddd;
+  background: rgba(250, 250, 250, 0.1);
+  height: 45px;
+}
+/* line 441, ../sass/backstage.scss */
+.serialNumber #himirror table thead tr td {
+  vertical-align: middle;
+}
+/* line 444, ../sass/backstage.scss */
+.serialNumber #himirror table thead tr td:nth-child(1) {
+  text-align: center;
+}
+/* line 447, ../sass/backstage.scss */
+.serialNumber #himirror table thead tr td:nth-child(2) {
+  padding-left: 100px;
+}
+/* line 450, ../sass/backstage.scss */
+.serialNumber #himirror table thead tr td:nth-child(3) {
+  padding-left: 75px;
+}
+/* line 454, ../sass/backstage.scss */
+.serialNumber #himirror table tbody {
+  counter-reset: rowNumber;
+}
+/* line 456, ../sass/backstage.scss */
+.serialNumber #himirror table tbody tr {
+  counter-increment: rowNumber;
+  border-top: 1px solid #dddddd;
+  background: rgba(250, 250, 250, 0.1);
+  border-bottom: 1px solid #dddddd;
+  height: 45px;
+}
+/* line 462, ../sass/backstage.scss */
+.serialNumber #himirror table tbody tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
+/* line 467, ../sass/backstage.scss */
+.serialNumber #himirror table tbody tr td:nth-child(1) {
+  width: 128px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 472, ../sass/backstage.scss */
+.serialNumber #himirror table tbody tr td:nth-child(2) {
+  width: 390px;
+  padding-left: 100px;
+  vertical-align: middle;
+}
+/* line 477, ../sass/backstage.scss */
+.serialNumber #himirror table tbody tr td:nth-child(3) {
+  width: 455px;
+  padding-left: 52px;
+  vertical-align: middle;
+}
+/* line 482, ../sass/backstage.scss */
+.serialNumber #himirror table tbody tr .invalid, .serialNumber #himirror table tbody tr .valid, .serialNumber #himirror table tbody tr .notdb {
+  width: 20px;
+}
+
+/* line 491, ../sass/backstage.scss */
+.select_Cat {
+  color: #fff;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+/* line 498, ../sass/backstage.scss */
+.sel_Cate {
+  padding: 10px;
+  margin-left: 1px;
+}
+
+/* line 503, ../sass/backstage.scss */
+.index_dropdown {
+  margin-left: -93px;
+}
+
+/* line 506, ../sass/backstage.scss */
+.sel_DocType {
+  margin-top: 0px;
+  margin-left: 25px;
+  position: relative;
+  width: 250px;
+}
+
+/* line 513, ../sass/backstage.scss */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Arial", Verdana, Sans-serif;
+}
+
+/* line 525, ../sass/backstage.scss */
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 536, ../sass/backstage.scss */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* line 540, ../sass/backstage.scss */
+input[type=cancel] {
+  width: 10%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 552, ../sass/backstage.scss */
+input[type=cancel]:hover {
+  background-color: #45a049;
+}
+
+/* line 556, ../sass/backstage.scss */
+div {
+  border-radius: 3px;
+  background-color: #FFE4C4;
+  padding: 10px;
+}
+
+/* line 562, ../sass/backstage.scss */
+input.inputText2 {
+  width: 50%;
+}
+
+/* line 566, ../sass/backstage.scss */
+input.inputText1, input.inputText3 {
+  width: 10%;
+}
+
+/* line 570, ../sass/backstage.scss */
+input.inputText4 {
+  width: 50%;
+}
+
+/* line 574, ../sass/backstage.scss */
+input.inputLink {
+  width: 50%;
+}
+
+/* line 577, ../sass/backstage.scss */
+input.inputText3 {
+  position: absolute;
+  left: 122px;
+  top: 213px;
+}
+
+/* line 582, ../sass/backstage.scss */
+input.inputModel {
+  position: absolute;
+  left: 220px;
+  top: 497px;
+}
+
+/* line 587, ../sass/backstage.scss */
+input.inputModelNo {
+  width: 15%;
+  position: absolute;
+  left: 653px;
+  top: 498px;
+}
+
+/* line 593, ../sass/backstage.scss */
+.docModNum {
+  width: 15%;
+  position: absolute;
+  left: 422px;
+  top: 506px;
+}
+
+/* line 600, ../sass/backstage.scss */
+.ldocLoc {
+  position: absolute;
+  left: 522px;
+  top: 606px;
+}
+
+/* line 606, ../sass/backstage.scss */
+.ldocPLoc {
+  position: absolute;
+  left: 945px;
+  top: 566px;
+}
+
+/* line 613, ../sass/backstage.scss */
+.select-cat, .select_dep {
+  width: 35%;
+}
+
+/* line 617, ../sass/backstage.scss */
+.select-status, .select-PM {
+  width: 13%;
+}
+
+/* line 620, ../sass/backstage.scss */
+#category {
+  width: 35%;
+  background-color: white;
+  color: gray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 634, ../sass/backstage.scss */
+#productCategory_beauty {
+  width: 25%;
+  background-color: white;
+  color: gray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 4px;
+}

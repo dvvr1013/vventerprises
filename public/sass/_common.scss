@@ -1,0 +1,310 @@
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/transform";
+@import "susyone";
+
+$black: #000;
+$white: #fff;
+//$deep-gray: darken($white, 70%);
+$deep-gray : #b3b3b3;
+$light-gray: lighten($black, 70%);
+$highline: #666666;
+$hover: shade($highline, 50%);
+$hover2: tint($highline, 50%);
+$focused: orange;
+$color-bg: #fef6eb;  // Normal body background.
+$color-bg-gallery: url(https://twportal.blob.core.windows.net/main-images/debut_dark.png); // Gallery body background.
+$color-bg-helpCenter: #fce0e7; // Help center body background.
+$color-bg-hf: #fdeed8; // Normal header background.
+//old help bacground$color-bg-hf-helpCenter: #c8eBfa; // Help center header background.
+$color-bg-hf-helpCenter: #FFF; // Hi mirror header background.
+// $bgColor: #F9F7EF; //orginal
+
+$step-hint: #5bc0de;
+$separator: #b92626;
+$gray-text: #929497;
+$success: #22b073;
+$dangerious: red;
+
+$header-color-1: #666666;
+$header-color-1-revise: #77808d;
+$header-color-1-deep: darken($header-color-1, 10%);
+$header-color-2: #ff7800;
+
+$brown: #7C6855;
+$green: #22b073;
+$light-green: #1abc9c;
+$light-orange: #f28e1e;
+$light-yellow: tint(yellow, 70%);
+$light-pink: #ff81ba;
+$light-blue: #29a6dd;
+
+$fontsize-xs: 11px;
+$fontsize-s: 14px;
+$fontsize-sm: 16px;
+$fontsize-m: 21px;
+$fontsize-ml: 24px;
+$fontsize-l: 28px;
+$fontsize-xl: 34px;
+
+$icon-s: 24px;
+$icon-m: 36px;
+$icon-l: 48px;
+
+$font-1: "Myriad Pro","Verdana","Arial";
+$font-2: "Helvetica","Arial";
+
+@mixin drop-shadow($color,$x,$y,$blur) {
+	-webkit-filter: drop-shadow($x $y $blur $color);
+	-moz-filter: drop-shadow($x $y $blur $color);
+	-ms-filter: drop-shadow($x $y $blur $color);
+	-o-filter: drop-shadow($x $y $blur $color);
+	filter: drop-shadow($x $y $blur $color);
+}
+@mixin bg-alpha-color($color-name,$alpha) {
+	background: rgba($color-name,$alpha);
+}
+@mixin fg-alpha-color($color-name,$alpha) {
+	color: rgba($color-name,$alpha);
+}
+@mixin grid-shadow {
+	@include single-box-shadow($black,2px,2px,2px);
+	background: $white;
+	transition: 0.3s;
+}
+@mixin bg-gradient($color1,$color2) {
+	background: $color1; /* Old browsers */
+	background: -moz-linear-gradient(top,  $color1 0%, $color2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $color1 0%,$color2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  $color1 0%,$color2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+}
+@mixin display-flex{
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;     /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+@mixin display-flex-config($flex-stacks){
+  -webkit-box-flex: $flex-stacks;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: $flex-stacks;      /* OLD - Firefox 19- */
+  width: 20%;            /* For old syntax, otherwise collapses. */
+  -webkit-flex: $flex-stacks;       /* Chrome */
+  -ms-flex: $flex-stacks;           /* IE 10 */
+  flex: $flex-stacks;               /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+@mixin disabled(){
+  &.disabled {
+    a {
+      color: $light-gray;
+      cursor: default;
+      &:hover{
+        background: none;
+      }
+    }
+    &:hover {
+      border: 0 transparent;
+    }
+  }
+}
+@mixin banner-format() {
+	.main_banner {
+		height: 400px;
+		width:100%;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		.banner{
+			width:100%;
+			height:100%;
+			.banner_background{
+				width:100%;
+				height:100%;
+				.bg_img{
+					position: relative;
+					height: 100%;
+					width: 100%;
+					img{
+						position: absolute;
+						height: 100%;
+						top: 50%;
+						left: 50%;
+						-webkit-transform: translate(-50%, -50%);
+						-moz-transform: translate(-50%, -50%);
+						-ms-transform: translate(-50%, -50%);
+						-o-transform: translate(-50%, -50%);
+						transform: translate(-50%, -50%);
+					}
+				}
+			}
+			.banner_stamps{
+				width:100%;
+				height:auto;
+			}
+		}
+	}
+}
+
+@mixin cssImageSprites($url, $w, $h) {
+	background: url($url) 0 0 no-repeat;
+	@content;
+}
+
+%socialMediaIcon {
+	//use css sprites
+	$icon_w: 30px;
+	$icon_h: 30px;
+	width: $icon_w;
+	height: $icon_h;
+	background: url('http://twportal.blob.core.windows.net/images-hf/general/ic_social.png') no-repeat;
+	background-position: 0 0;
+	a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	&.socialMedia_fb {
+		background-position: -($icon_w *2) 0;
+		&:hover {
+			background-position: -($icon_w *2) -30px;
+		}
+	}
+	&.socialMedia_twitter {
+		background-position: -($icon_w *1) 0;
+		&:hover {
+			background-position: -($icon_w *1) -30px;
+		}
+	}
+	&.socialMedia_in {
+		background-position: -($icon_w *0) 0;
+		&:hover {
+			background-position: -($icon_w *0) -30px;
+		}
+	}
+	&.socialMedia_tsina {
+	    background-position: -($icon_w *1) 0;
+	    &:hover {
+	      background-position: -($icon_w *1) -30px;
+	    }
+	  }
+	  &.socialMedia_qzone {
+	    background-position: -($icon_w *0) 0;
+	    &:hover {
+	      background-position: -($icon_w *0) -30px;
+	    }
+	  }
+	  &.socialMedia_weixin {
+	    background-position: -($icon_w *2) 0;
+	    &:hover {
+	      background-position: -($icon_w *2) -30px;
+	    }
+	  }
+}
+@mixin familyIcon($n) {
+	.familyIcon {
+		$icon_w: 50px;
+		$icon_h: 50px;
+		width: $icon_w;
+		height: $icon_h;
+		background: url('http://twportal.blob.core.windows.net/images-hf/general/ic_xyzfamily.png') no-repeat;
+		background-position: -($icon_w *2) 0;
+		background-size: $icon_w*($n+1);
+	}
+	@for $i from 1 through $n {
+		&:nth-of-type(#{$i+1}) {
+			a {
+				.familyIcon {
+					background-position: #{-(50*$i)}px 0px;
+				}
+			}
+		}
+	}
+}
+@mixin banner-nav() {
+	.banner-nav {
+		background: rgba(black, .7);
+		height: 5px;
+		text-align: center;
+		li {
+			background: white;
+			display: inline-block;
+			height: 100%;
+			margin: auto;
+			vertical-align: top;
+			width: 90px;
+			&:first-child ~ li {
+				margin-left: 10px;
+			}
+			&.active, &:hover {
+				background: #ef8b1e;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+.clear {
+	clear: both;
+}
+.page {
+	//@include susy-grid-background; //grid
+	@include container;
+	font-family: $font-2;	
+}
+.hyperlink-underline {
+	border-bottom: 1px solid $deep-gray;
+	padding-bottom: 3px;
+}
+
+
+
+//responsive header and footer variables
+
+//** Typographic
+// font-size, font-family, line height....
+
+$font-family-EN-base: "Roboto", "Helvetica", "Arial";
+$font-family-EN-base2: "Roboto", "Arial", "Helvetica";
+$font-family-ZH-base: "Microsoft JhengHei", "Arial", "Helvetica";
+$font-family-JA-base: "Meiryo", "Yu Gothic", "Helvetica", "Arial";
+$font-family-KO-base: "Malqun Gothic", "Batanq", "Dotum", "Helvetica", "Arial";
+
+$fontsize-base: 14px !default;
+$fontsize-sm: ceil(($fontsize-base * 0.85)) !default;  // ~12px
+$fontsize-lg: ceil(($fontsize-base * 1.25)) !default;  // ~18px
+
+$font-size-h1: floor(($fontsize-base * 5.2)) !default; // ~72px  // slogan
+$font-size-h2: ceil(($fontsize-base * 3.7)) !default; // ~52px
+$font-size-h3: floor(($fontsize-base * 2.6)) !default; // ~36px
+$font-size-h4: $fontsize-base * 2 !default; // ~28px
+$font-size-h5: ceil(($fontsize-base * 1.7)) !default; // ~24px
+
+$font-size-d1: $fontsize-base * 1.5 !default; // 21px Description
+$font-size-d2: floor(($fontsize-base * 1.3)) !default; // 18px
+$font-size-d3: floor(($fontsize-base * 1.2)) !default; // 16px
+$font-size-d4: $fontsize-base !default; // ~14px
+$font-size-d5: $fontsize-sm !default; // ~12px
+
+//** color
+
+
+$color-site-dark: #a00058;
+$color-site-primary: #d7006d;
+$color-site-caption: #f16488;
+
+$color-site-desc: #666;
+$color-site-desc-light: #d4d4d4;
+$color-site-trans-mask: rgba(#f16488,.5);
+$color-site-deco: #ff808a;
+
+$color-alert: #ff0000;
+$color-link: #ff808a;
+
+// border color
+$color-border-white: rgba(white,.2);
+$color-border-light: rgba(black,.1);
