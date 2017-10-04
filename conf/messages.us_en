@@ -1,0 +1,51 @@
+﻿# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+#Menu
+mainContactUs = Contact Us
+mainAboutUs   = About Us
+
+websiteTitle_Fragrance = Franchesca's Fragrance
+
+#Company Profile
+parag1= Vivar-Villanueva Enterprises was established on June 2009, Our team of professional trained graphics artist and well trained people in field of printing and other graphics designs. We also caters for your party and personal needs from your occassions(birthday's, baptism, wedding and business launch) to personal gifts to corporate giveaways.
+
+#OurMission
+parag2=The Company aims to be the best and lead in providing services in the field not only in printing butas well as well as catering in making , customizing as customer requirements and needs. This involved in all aspects, to name, T-Shirts,uniforms, corporate giveaways, and other items our customers or client wish us to be of service of. Not only that, we also cater in laying out designs not only for these items but so with signage as a marketing strategy of our clients.
+
+#OurVission
+parag3=The Company does not only aims to satisfy the needs of our clients but also to e a helping in the society by promoting and generating jobs to people who are skillful in this field of work.To be number one and to be leading in this business field not only concertrating in Laguna but also making a name inother localities and cities
+
+
+#Backstage
+beatyprod1=NuSkin
+beatyprod2=Human Heart Nature
+
+bpCat=Beauty Product
+
+#NuSkin
+FW=Are you looking for a soap-free feminine wash that has right PH level?<br>Well, this one is perfect for you! You can use it as body wash, baby wash and even shampoo too! Amazing! ❤<br> 🚺SCION FEMININE WASH(250mL) 1-2mos use.<br>
+FW1 = ✅removes unnecessary smell
+FWp1= ✅whitens your bikini area
+FWp12=✅hypoallergenic
+FWp13=✅with anti bacterial agent
+FWp14=✅makes ur private part smooth
+FWp15=✅with pH balanced
+FWp16=✅doesn't irritate skin
+FWp17=✅creates good and pleasing odor when used
+FWp18=A mild vaginal wash that cleanses and provides a refreshing feeling. It maintains the natural acidic pH level and maintains a normal environment. It is soap free, with a pH level of 3.5free.☺
+
+#Bestseller
+BS = The NuSkin Power Trio! I use these everyday. 😍<br>
+BS1=THE BEST SELLERS!<br>
+BS2=💜 Ap24 Whitening Toothpaste<br>
+BS3=💜 Scion Deodorant<br>
+BS4=💜 Scion Feminine Wash<br>
+BS5=👍What are you waiting for? Try it for yourself. 😍😍😍<br>
+
+
+AP24=😍 AP24 Whitening Toothpaste
+AP241=- non peroxide whitening toothpaste
+AP242=- removes coffee and red wine stains
+AP243=- keeps your breath fresh longer
