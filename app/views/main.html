@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Vivar-Villanueva Enterprises</title>
-        <meta charset="${_response_encoding}">
-        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
-
-        #{get 'moreStyles' /}
-        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-
-        #{get 'moreScripts' /}
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=2">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    </head>
-    <style>
+<head>
+    <title>Vivar-Villanueva Enterprises</title>
+    <meta charset="${_response_encoding}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+    #{get 'moreStyles' /}
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/vvelogo.png'}">
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    #{get 'moreScripts' /}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<style>
 div.img {
     margin: 5px;
     border: 1px solid #ccc;
@@ -38,294 +36,404 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 109px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 </style>
-    <style>
+
+
+<style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
   }
+  .row {
+   background-color: pink;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
+
   </style>
 
-    <body>
-    <div class="container">
-        <div class="title">
-            <marquee behavior="scroll" direction="left"><p> VIVAR-VILLANUEVA ENTERPRISES | PRINTING SERVICES AND CORPORATE GIVEAWAYS...... </p></marquee>
+<body>
+<div class="container">
+    <div class="title">
+        <marquee behavior="scroll" direction="left"><p> VIVAR-VILLANUEVA ENTERPRISES | PRINTING SERVICES AND CORPORATE GIVEAWAYS...... </p></marquee>
+    </div>
+</div>
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid"> </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="@{Application.index()}">Home</a></li>
+                <li><a href="@{Application.aboutus()}">Company Profile</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="@{Application.ts()}">Customize T-Shirt Printing / Corporate Giveaways</a></li>
+                        <li><a href="@{Application.f_fragrance()}">Fragrance</a></li>
+                        <li><a href="@{Application.cloth()}">Clothing Product</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Beauty Product</a>
+                            <div class="dropdown-content">
+                                <a href="@{Application.nuskin()}"><span style="color:orange">NuSkin Product</span></a>
+                                <a href="@{Application.HN()}"><span style="color:orange">Human Heart Nature</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+             </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+         </ol>-->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" >
+                <img align="middle" src="/public/images/Image_tshirt.jpg" alt="Customize T/Shirt Printing" >
+                <div class="carousel-caption">
+                    <h3>T/Shirt Printing</h3>
+                </div>
+            </div>
+            <div class="item">
+                <a href="@{Application.f_fragrance()}">
+                    <img src="/public/images/1390656_664850986870070_1362492560_n.jpg" alt="" width="850" height="180">
+                </a>
+                <div class="carousel-caption">
+                    <h3>Franchesca's Fragrance</h3>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-med-2">
+            <h3 id="top" ><a href="@{Application.ts()}">T-Shirt Printing / Corporate Giveaways</a></h3>
+            <p>We made TShirt Personalized Design for you...</p>
+            <p>SilkScreen Printing, Digital Printing, Stickers, Tarpaulin...</p>
+            <p>We made a customized design for your company needs....</p>
+            <br>
+        </div>
+        <div class="col-med-2">
+            <h3><a href="@{Application.f_fragrance()}">Franchesca's Fragrance</a></h3>
+            <p>We made a our very own version of perfume fragrance made from France....</p>
         </div>
     </div>
+</div>
+<br>
+</div>
+
+<div class="container">
+    <h2>Printing Services</h2>
+    <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">MUGS</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body"> <div class="img">
+                    <a  href="/public/images/vve/Mug/mug1.jpg">
+                        <img src="/public/images/vve/Mug/mug1.jpg" alt="Fjords" width="300" height="200">
+                    </a>
+                    <div class="desc">Mugs for 6th Years Anniversary of Solid Sun Builders</div>
+                </div>
+                    <div class="img">
+                        <a href="/public/images/vve/Mug/mug2.jpg">
+                            <img src="/public/images/vve/Mug/mug2.jpg" alt="mug2" width="300" height="200">
+                        </a>
+                        <div class="desc">Mugs for 6th Years Anniversary of Solid Sun Builders</div>
+                    </div>
+                    <div class="img">
+                        <a href="/public/images/vve/Mug/mug3.jpg">
+                            <img src="/public/images/vve/Mug/mug3.jpg" alt="mug3" width="300" height="200">
+                        </a>
+                        <div class="desc">Mugs for Christmas Giveaways of JDLP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">BAGS</a>
+            </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag1.jpg">
+                        <img src="/public/images/vve/Bag Print/bag1.jpg" alt="bag1" width="300" height="200">
+                    </a>
+                    <div class="desc">Bags for Birthday Giveaways</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag5.jpg">
+                        <img src="/public/images/vve/Bag Print/bag5.jpg" alt="bag5" width="300" height="200">
+                    </a>
+                    <div class="desc">Bags for The Fragrance Project</div>
+                </div><br>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag6.jpg">
+                        <img src="/public/images/vve/Bag Print/bag6.jpg" alt="bag6" width="300" height="200">
+                    </a>
+                    <div class="desc">Bags for The Fragrance Project</div>
+                </div>
+
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag3.jpg">
+                        <img src="/public/images/vve/Bag Print/bag3.jpg" alt="bag3" width="300" height="200">
+                    </a>
+                    <div class="desc">Bag Order Ship to Guam</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag4.jpg">
+                        <img src="/public/images/vve/Bag Print/bag4.jpg" alt="bag4" width="300" height="200">
+                    </a>
+                    <div class="desc">Bag Order Ship to Guam</div>
+                </div>
+            </div>
+        </div>
+    </div> <!--end of col#2-->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Bags Printing Services Order Ship to Guam and Order from GPC</a>
+            </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag2.jpg">
+                        <img src="/public/images/vve/Bag Print/bag2.jpg" alt="bag2" width="300" height="200">
+                    </a>
+                    <div class="desc">Bag Order Ship to Guam</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag7.jpg">
+                        <img src="/public/images/vve/Bag Print/bag7.jpg" alt="bag7" width="300" height="200">
+                    </a>
+                    <div class="desc">Bag Order Ship to Guam</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag8.jpg">
+                        <img src="/public/images/vve/Bag Print/bag8.jpg" alt="bag8" width="300" height="200">
+                    </a>
+                    <div class="desc">Bag Order Ship to Guam</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/bag9.jpg">
+                        <img src="/public/images/vve/Bag Print/bag9.jpg" alt="bag9" width="300" height="200">
+                    </a>
+                    <div class="desc">Bag Order Ship to Guam</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">UMBRELLA and SOUVENIERS</a>
+            </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/umb2.jpg">
+                        <img src="/public/images/vve/Bag Print/umb2.jpg" alt="umbr2" width="300" height="200">
+                    </a>
+                    <div class="desc">Corporate Giveaways from Kyocera</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Bag Print/umb3.jpg" >
+                        <img src="/public/images/vve/Bag Print/umb3.jpg" alt="umbr3" width="300" height="200">
+                    </a>
+                    <div class="desc">Corporate Giveaways from Kyocera</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Button Pin/button1.jpg">
+                        <img src="/public/images/vve/Button Pin/button1.jpg" alt="button1" width="300" height="200">
+                    </a>
+                    <div class="desc">Birthday Giveaways</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">T-Shirt Printing Services - Vinyl Printing using Heat Press</a>
+            </h4>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer3.jpg">
+                        <img src="/public/images/vve/jersey/jer3.jpg" alt="jer3" width="300" height="200">
+                    </a>
+                    <div class="desc">Brgy Punta League</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer4.jpg">
+                        <img src="/public/images/vve/jersey/jer4.jpg" alt="jer4" width="300" height="200">
+                    </a>
+                    <div class="desc">Brgy Punta League</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer5.jpg">
+                        <img src="/public/images/vve/jersey/jer5.jpg" alt="jer5" width="300" height="200">
+                    </a>
+                    <div class="desc">Brgy Punta League</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">T-Shirt Printing Services - Silkscreen</a>
+            </h4>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer1.jpg">
+                        <img src="/public/images/vve/jersey/jer1.jpg" alt="jer1" width="300" height="200">
+                    </a>
+                    <div class="desc">Morning Star Montessori School Los Banos</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/jersey/jer2.jpg">
+                        <img src="/public/images/vve/jersey/jer2.jpg" alt="jer2" width="300" height="200">
+                    </a>
+                    <div class="desc">Morning Star Montessori School Los Banos</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Tshirt/ts2.jpg" >
+                        <img src="/public/images/vve/Tshirt/ts2.jpg" alt="ts2" width="300" height="200">
+                    </a>
+                    <div class="desc">Birthday Personalized - Mar 2017</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Tshirt/ts1.jpg">
+                        <img src="/public/images/vve/Tshirt/ts1.jpg" alt="ts1" width="300" height="200">
+                    </a>
+                    <div class="desc">Personalized Ship to Canada</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Tshirt/ts3.jpg">
+                        <img src="/public/images/vve/Tshirt/ts3.jpg" alt="ts3" width="300" height="200">
+                    </a>
+                    <div class="desc">Donation for Les Fortunate People - Caraban December 2016</div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Corporate Printing Services - Vinyl Ink - Silkscreen</a>
+            </h4>
+        </div>
+        <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="img">
+                    <a href="/public/images/vve/Planner/plan1.jpg">
+                        <img src="/public/images/vve/Planner/plan1.jpg" alt="plan1" width="300" height="200">
+                    </a>
+                    <div class="desc">Solid Sun Builders 2017</div>
+                </div>
+                <div class="img">
+                    <a href="/public/images/vve/Planner/plan2.jpg">
+                        <img src="/public/images/vve/Planner/plan2.jpg" alt="plan2" width="300" height="200">
+                    </a>
+                    <div class="desc">Solid Sun Builders 2017</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<p align="right"><a href="#top">Go to top</a></p>
+<footer>
     <div class="container">
         <nav class="navbar navbar-inverse">
-            <div class="container-fluid"> </div>
-            <div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="@{Application.index()}">Home</a></li>
-                    <li><a href="@{Application.aboutus()}">Company Profile</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="@{Application.ts()}">Customize T-Shirt Printing / Corporate Giveaways</a></li>
-                            <li><a href="@{Application.f_fragrance()}">Fragrance</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="@{Application.aboutus()}">About Us</a></li>
+                        <li><a href="@{Application.contactus()}">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </div>
-    <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-           <!-- <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>-->
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active" >
-                    <img align="middle" src="/public/images/Image_tshirt.jpg" alt="Customize T/Shirt Printing" >
-                    <div class="carousel-caption">
-                        <h3>T/Shirt Printing</h3>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href="@{Application.f_fragrance()}">
-                        <img src="/public/images/1390656_664850986870070_1362492560_n.jpg" alt="" width="850" height="180">
-                    </a>
-                    <div class="carousel-caption">
-                        <h3>Franchesca's Fragrance</h3>
-                        <p></p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-    <br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-med-3">
-                <h3 id="top" ><a href="@{Application.ts()}">T-Shirt Printing / Corporate Giveaways</a></h3>
-                <p>We made TShirt Personalized Design for you...</p>
-                <p>SilkScreen Printing, Digital Printing, Stickers, Tarpaulin...</p>
-                <p>We made a customized design for your company needs....</p>
-
-            </div>
-            <div class="col-med-3">
-                <h3><a href="@{Application.f_fragrance()}">Franchesca's Fragrance</a></h3>
-                <p>We made a our very own version of perfume fragrance made from France....</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <h2>Mugs Printing Services </h2>
-        <div class="img">
-            <a  href="/public/images/vve/Mug/mug1.jpg">
-                <img src="/public/images/vve/Mug/mug1.jpg" alt="Fjords" width="300" height="200">
-            </a>
-            <div class="desc">Mugs for 6th Years Anniversary of Solid Sun Builders</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Mug/mug2.jpg">
-                <img src="/public/images/vve/Mug/mug2.jpg" alt="mug2" width="300" height="200">
-            </a>
-            <div class="desc">Mugs for 6th Years Anniversary of Solid Sun Builders</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Mug/mug3.jpg">
-                <img src="/public/images/vve/Mug/mug3.jpg" alt="mug3" width="300" height="200">
-            </a>
-            <div class="desc">Mugs for Christmas Giveaways of JDLP</div>
-        </div>
-    </div>
-  <br>
-    <div class="container">
-        <h2>Bags Printing Services </h2>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag1.jpg">
-                <img src="/public/images/vve/Bag Print/bag1.jpg" alt="bag1" width="300" height="200">
-            </a>
-            <div class="desc">Bags for Birthday Giveaways</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag5.jpg">
-                <img src="/public/images/vve/Bag Print/bag5.jpg" alt="bag5" width="300" height="200">
-            </a>
-            <div class="desc">Bags for The Fragrance Project</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag6.jpg">
-                <img src="/public/images/vve/Bag Print/bag6.jpg" alt="bag6" width="300" height="200">
-            </a>
-            <div class="desc">Bags for The Fragrance Project</div>
-        </div>
-
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag3.jpg">
-                <img src="/public/images/vve/Bag Print/bag3.jpg" alt="bag3" width="300" height="200">
-            </a>
-            <div class="desc">Bag Order Ship to Guam</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag4.jpg">
-                <img src="/public/images/vve/Bag Print/bag4.jpg" alt="bag4" width="300" height="200">
-            </a>
-            <div class="desc">Bag Order Ship to Guam</div>
-        </div>
-    </div>
-   <br>
-    <div class="container">
-        <h2>Bags Printing Services  Order Ship to Guam and Order from GPC</h2>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag2.jpg">
-                <img src="/public/images/vve/Bag Print/bag2.jpg" alt="bag2" width="300" height="200">
-            </a>
-            <div class="desc">Bag Order Ship to Guam</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag7.jpg">
-                <img src="/public/images/vve/Bag Print/bag7.jpg" alt="bag7" width="300" height="200">
-            </a>
-            <div class="desc">Bag Order Ship to Guam</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag8.jpg">
-                <img src="/public/images/vve/Bag Print/bag8.jpg" alt="bag8" width="300" height="200">
-            </a>
-            <div class="desc">Bag Order Ship to Guam</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/bag9.jpg">
-                <img src="/public/images/vve/Bag Print/bag9.jpg" alt="bag9" width="300" height="200">
-            </a>
-            <div class="desc">Bag Order Ship to Guam</div>
-        </div>
 
     </div>
-   <br>
-    <div class="container">
-        <h2>Umbrela Printing Services </h2>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/umb2.jpg">
-                <img src="/public/images/vve/Bag Print/umb2.jpg" alt="umbr2" width="300" height="200">
-            </a>
-            <div class="desc">Corporate Giveaways from Kyocera</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Bag Print/umb3.jpg" >
-                <img src="/public/images/vve/Bag Print/umb3.jpg" alt="umbr3" width="300" height="200">
-            </a>
-            <div class="desc">Corporate Giveaways from Kyocera</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Button Pin/button1.jpg">
-                <img src="/public/images/vve/Button Pin/button1.jpg" alt="button1" width="300" height="200">
-            </a>
-            <div class="desc">Birthday Giveaways</div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <h2>T-Shirt Printing Services - Vinyl Printing using Heat Press</h2>
-        <div class="img">
-            <a href="/public/images/vve/jersey/jer3.jpg">
-                <img src="/public/images/vve/jersey/jer3.jpg" alt="jer3" width="300" height="200">
-            </a>
-            <div class="desc">Brgy Punta League</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/jersey/jer4.jpg">
-                <img src="/public/images/vve/jersey/jer4.jpg" alt="jer4" width="300" height="200">
-            </a>
-            <div class="desc">Brgy Punta League</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/jersey/jer5.jpg">
-                <img src="/public/images/vve/jersey/jer5.jpg" alt="jer5" width="300" height="200">
-            </a>
-            <div class="desc">Brgy Punta League</div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <h2>T-Shirt Printing Services - Silkscreen</h2>
-        <div class="img">
-            <a href="/public/images/vve/jersey/jer1.jpg">
-                <img src="/public/images/vve/jersey/jer1.jpg" alt="jer1" width="300" height="200">
-            </a>
-            <div class="desc">Morning Star Montessori School Los Banos</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/jersey/jer2.jpg">
-                <img src="/public/images/vve/jersey/jer2.jpg" alt="jer2" width="300" height="200">
-            </a>
-            <div class="desc">Morning Star Montessori School Los Banos</div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <h2>T-Shirt Printing Services - Silkscreen</h2>
-        <div class="img">
-            <a href="/public/images/vve/Tshirt/ts1.jpg">
-                <img src="/public/images/vve/Tshirt/ts1.jpg" alt="ts1" width="300" height="200">
-            </a>
-            <div class="desc">Personalized Ship to Canada</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Tshirt/ts3.jpg">
-                <img src="/public/images/vve/Tshirt/ts3.jpg" alt="ts3" width="300" height="200">
-            </a>
-            <div class="desc">Donation for Les Fortunate People - Caraban December 2016</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Tshirt/ts2.jpg" >
-                <img src="/public/images/vve/Tshirt/ts2.jpg" alt="ts2" width="300" height="200">
-            </a>
-            <div class="desc">Birthday Personalized - Mar 2017</div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <h2>Corporate Printing Services - Vinyl Ink - Silkscreen</h2>
-        <div class="img">
-            <a href="/public/images/vve/Planner/plan1.jpg">
-                <img src="/public/images/vve/Planner/plan1.jpg" alt="plan1" width="300" height="200">
-            </a>
-            <div class="desc">Solid Sun Builders 2017</div>
-        </div>
-        <div class="img">
-            <a href="/public/images/vve/Planner/plan2.jpg">
-                <img src="/public/images/vve/Planner/plan2.jpg" alt="plan2" width="300" height="200">
-            </a>
-            <div class="desc">Solid Sun Builders 2017</div>
-        </div>
-    </div>
+</footer>
 
-   <p align="right"><a href="#top">Go to top</a></p>
-    <footer>
-        <div class="container">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div>
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="@{Application.aboutus()}">About Us</a></li>
-                            <li><a href="@{Application.contactus()}">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-    </footer>
-
-    </body>
+</body>
 </html>
