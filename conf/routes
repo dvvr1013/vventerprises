@@ -10,10 +10,16 @@ GET		/contactus								Application.contactus
 GET		/HN										Application.HN
 GET		/aboutus								Application.aboutus
 GET     /ts                                     Application.ts
+GET     /nuskin                                 Application.nuskin
+GET     /cloth                                  Application.cloth
+
+
 
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
+GET     /vvelogo.ico                            404
+
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
