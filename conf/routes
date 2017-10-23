@@ -12,6 +12,8 @@ GET		/aboutus								Application.aboutus
 GET     /ts                                     Application.ts
 GET     /nuskin                                 Application.nuskin
 GET     /cloth                                  Application.cloth
+GET     /customts                               Application.customts
+
 
 
 
