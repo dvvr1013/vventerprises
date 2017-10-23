@@ -30,7 +30,7 @@ public class Application extends Controller {
 
     public static void aboutus() { render(); }
 
-    public static void TS() {
+    public static void ts() {
         render();
     }
     public static void nuskin() {
