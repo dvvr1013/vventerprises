@@ -82,7 +82,22 @@ div.desc {
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
   }
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
 
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
 </style>
 </head>
 <body>
@@ -91,6 +106,19 @@ div.desc {
         <marquee behavior="scroll" direction="left"><p> VIVAR-VILLANUEVA ENTERPRISES | PRINTING SERVICES AND CORPORATE GIVEAWAYS...... </p></marquee>
     </div>
 </div>
+
+<h2>Button Groups</h2>
+<p>Remove margins and float the buttons to create a button group:</p>
+
+<div class="btn-group">
+    <button class="button">Button</button>
+    <button class="button">Button</button>
+    <button class="button">Button</button>
+    <button class="button">Button</button>
+</div>
+
+
+
 <div class="container">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid"> </div>
@@ -117,6 +145,8 @@ div.desc {
         </div>
     </nav>
 </div>
+
+
 
 <!--
 
