@@ -14,10 +14,11 @@
     #{get 'moreScripts' /}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=2">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
 div.img {
@@ -106,17 +107,31 @@ div.desc {
         <marquee behavior="scroll" direction="left"><p> VIVAR-VILLANUEVA ENTERPRISES | PRINTING SERVICES AND CORPORATE GIVEAWAYS...... </p></marquee>
     </div>
 </div>
+<div class="container">
+    <nav class="navbar navbar-inverse">
 
-<h2>Button Groups</h2>
-<p>Remove margins and float the buttons to create a button group:</p>
-
-<div class="btn-group">
-    <button class="button">Button</button>
-    <button class="button">Button</button>
-    <button class="button">Button</button>
-    <button class="button">Button</button>
+<ul class="nav navbar-nav">
+    <li class="active"><a href="/">Home</a>
+    <li><a href="/aboutus">Company Profile</a></li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <<li><a href="/ts">Customize T-Shirt Printing / Corporate Giveaways</a></li>
+            <li><a href="/fragrance">Fragrance</a></li>
+            <li><a href="/cloth">Clothing Product</a></li>
+            <li class="divider"></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Beauty Product</a>
+                <div class="dropdown-content">
+                    <a href="/nuskin"><span style="color:orange">NuSkin Product</span></a>
+                    <a href="/HN"><span style="color:orange">Human Heart Nature</span></a>
+                </div>
+            </li>
+        </ul>
+        </ul>
+    </li>
+</ul>
 </div>
-
 
 
 <div class="container">
